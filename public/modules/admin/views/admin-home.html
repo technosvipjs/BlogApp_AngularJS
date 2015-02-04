@@ -1,0 +1,20 @@
+<div class="row">
+
+    <!-- Controls Menu Start -->
+    <div class="col-xs-3">
+        <nav>
+            <ul class="nav nav-pills nav-stacked" on-click-make-active>
+                <li ui-sref-active="active"><a ui-sref="admin.postViewAll">View All Posts</a></li>
+                <li ui-sref-active="active"><a ui-sref="admin.postNew">Add Post</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Controls Menu End -->
+
+    <!-- Nested Views Start -->
+    <div class="col-xs-9 border-left">
+        <div ui-view></div>
+    </div>
+    <!-- Nested Views End -->
+
+</div>

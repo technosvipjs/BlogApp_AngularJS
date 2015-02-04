@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Application</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="modules/posts/css/posts.css">
+    <link rel="stylesheet" type="text/css" href="modules/admin/css/admin.css">
+</head>
+
+
+<body>
+
+    <!-- Container Start -->
+    <div class="container">
+
+        <br>
+
+        <!-- Blog Welcome Start -->
+        <div ng-include="'views/welcome.html'"></div>
+        <!-- Blog Welcome End -->
+
+        <!-- Main Content Start -->
+        <div ui-view></div>
+        <!-- Main Content End -->
+
+        <!-- Footer Start -->
+        <div ng-include="'views/footer.html'"></div>
+        <!-- Footer End -->
+
+    </div>
+    <!-- Container End -->
+
+
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-resource.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-translate.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="modules/posts/postModule.js"></script>
+    <script type="text/javascript" src="modules/posts/js/controllers.js"></script>
+    <script type="text/javascript" src="modules/posts/js/directives.js"></script>
+    <script type="text/javascript" src="modules/posts/js/filters.js"></script>
+    <script type="text/javascript" src="modules/posts/js/services.js"></script>
+    <script type="text/javascript" src="modules/admin/adminModule.js"></script>
+    <script type="text/javascript" src="modules/admin/js/controllers.js"></script>
+    <script type="text/javascript" src="modules/admin/js/directives.js"></script>
+    <script type="text/javascript" src="modules/admin/js/filters.js"></script>
+    <script type="text/javascript" src="modules/admin/js/services.js"></script>
+</body>
+</html>

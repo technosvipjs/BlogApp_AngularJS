@@ -1,0 +1,21 @@
+<div class="row">
+    <article class="col-xs-8 col-xs-offset-2">
+        <button class="pull-right close" ng-click="closePost()">X</button>
+
+        <!-- Post Title Start-->
+        <h1>{{singlePost.title}}</h1>
+        <h5>{{'BY' | translate}}: {{singlePost.author}} | {{singlePost.datePublished | date}}</h5>
+        <!-- Post Title End-->
+
+        <!-- Post Content Start-->
+        <div class="post-content">{{singlePost.content}}</div>
+        <!-- Post Content End-->
+
+        <!-- Comments Container Start -->
+        <div class="comments">
+            <div post-comments post-instance="singlePost"></div>
+        </div>
+        <!-- Comments Container End -->
+
+    </article>
+</div>

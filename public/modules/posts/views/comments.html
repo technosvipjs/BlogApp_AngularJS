@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h3>{{'COMMENTS' | translate}}</h3>
+        <br>
+
+        <!-- Comment Form Start -->
+        <form ng-submit="saveComment(comment)" name="commentForm" novalidate>
+            <div class="form-group">
+                <textarea cols="40" rows="5" class="form-control"
+                          placeholder="Type your comment here..."
+                            ng-model="comment.content" name="content"
+                            ng-required="true"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control"
+                       placeholder="type your name..."
+                        ng-model="comment.author" name="author"
+                        ng-required="true">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm"
+                        ng-disabled="commentForm.$invalid">{{'ADD' | translate}}</button>
+            </div>
+        </form>
+        <!-- Comment Form End -->
+
+        <!-- Comments List Start -->
+        <div class="comments-list">
+            <div class="single-comment" ng-repeat="comment in
+            postInstance.comments">
+                <p class="comment-content">{{comment.content}}</p>
+                <div class="comment-info">
+                    {{'BY' | translate}}: <span>{{comment.author}}</span> | On:
+                    <span>{{comment.datePublished | date:'MM-dd-yy'}}</span>
+                </div>
+            </div>
+        </div>
+        <!-- Comments List End -->
+
+    </div>
+</div>

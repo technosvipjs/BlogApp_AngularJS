@@ -1,0 +1,10 @@
+<section class="jumbotron text-center">
+    <h1>{{'TITLE' | translate}}</h1>
+    <p>{{'SUBTITLE' | translate}}</p>
+    <div class="btn-group switch-language">
+        <button class="btn btn-default btn-xs"
+                ng-class="{'active':languagePreference.isActiveLanguage('en')}" ng-click="languagePreference.switchLanguage('en')">English</button>
+        <button class="btn btn-default btn-xs"
+                ng-class="{'active':languagePreference.isActiveLanguage('de')}" ng-click="languagePreference.switchLanguage('de')">German</button>
+    </div>
+</section>

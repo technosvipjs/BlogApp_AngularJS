@@ -1,0 +1,52 @@
+/* Permalink & Words */
+.permalink,
+.words{
+    display: block;
+    margin: 5px 0 0;
+}
+
+/* Error Message */
+.error-message {
+    display: inline-block;
+    margin-top: 5px;
+    color: red;
+}
+
+/* Comments List */
+.comments-list {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid #ccc;
+}
+
+/* Single Comment */
+.single-comment {
+    margin:0 0 18px 18px;
+    padding: 10px;
+    background: #ededed;
+    border-left: 3px solid #999;
+}
+
+.single-comment.ng-enter {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+.single-comment.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+/* Comment Info */
+.comment-info {
+    color: #999;
+}
+
+/* Footer */
+.footer {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #e3e3e3;
+}
